@@ -25,5 +25,13 @@ $(document).ready(function() {
     total = warningArray.length + healthArray.length - copingArray.length
     console.log(total)
 
+    if (total <= 6) {
+      $("#low-stress").show();
+    } else if (total <= 9) {
+      $("#high-coping").show();
+    } else {
+      $("#low-coping").show();
+    }
+
   });
 });
