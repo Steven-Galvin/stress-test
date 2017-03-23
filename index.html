@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.2.0.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Stress-Test</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="well">
+        <h1>Stress Test</h1>
+        <h5>Answer the following questions to determine how affected you are by stress.</h5>
+      </div>
+      <form id="stress-test">
+        <div class="form-group">
+          <p>Which warning signs of stress do you experience? (Check all that apply):</p>
+          <input type="checkbox" name="warning-signs" value="1"> Loss of sleep<br>
+          <input type="checkbox" name="warning-signs" value="1"> Feeling overwhelmed<br>
+          <input type="checkbox" name="warning-signs" value="1"> Low energy<br>
+          <input type="checkbox" name="warning-signs" value="1"> Dry mouth<br>
+          <input type="checkbox" name="warning-signs" value="1"> Chest pains<br>
+          <input type="checkbox" name="warning-signs" value="1"> Upset stomach<br>
+        </div>
+        <div class="form-group">
+          <p>Which health symptoms of stress do you experience? (Check all that apply):</p>
+          <input type="checkbox" name="health-symptoms" value="1"> Elevated blood pressure<br>
+          <input type="checkbox" name="health-symptoms" value="1"> Digestive Problems<br>
+          <input type="checkbox" name="health-symptoms" value="1"> Increased Anxiety<br>
+          <input type="checkbox" name="health-symptoms" value="1"> Palpitations<br>
+          <input type="checkbox" name="health-symptoms" value="1"> Increased Anger<br>
+          <input type="checkbox" name="health-symptoms" value="1"> Depression<br>
+        </div>
+        <div class="form-group">
+          <p>Which coping methods do you use to deal with stress? (Check all that apply):</p>
+          <input type="checkbox" name="coping-method" value="1"> Exercise regularly<br>
+          <input type="checkbox" name="coping-method" value="1"> Meditate<br>
+          <input type="checkbox" name="coping-method" value="1"> Eat a healthy diet<br>
+          <input type="checkbox" name="coping-method" value="1"> Talk to others<br>
+          <input type="checkbox" name="coping-method" value="1"> Take a break<br>
+          <input type="checkbox" name="coping-method" value="1"> Take a bath<br>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+      <span id="low-coping">
+        <p>It looks like you're having some trouble managing your stress. Here are some resources you can check out to help reduce the stress in your life.</p>
+      </span>
+      <span id="high-coping">
+        <p>You've got some stress, but you're coping with it well. Keep up the good work! *click here* if you want further reading regarding stress management.</p>
+      </span>
+      <span id="low-stress">
+        <p>It looks like you either know how to manage your stress like a pro, or you live a relatively stress free life! Keep up the great work!</p>
+      </span>
+    </div>
+  </body>
+</html>
